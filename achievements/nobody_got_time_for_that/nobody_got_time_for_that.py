@@ -15,6 +15,7 @@ class NobodyGotTimeForThat(AchievementData):
             if op.bl_idname == 'UV_OT_smart_project':
                 self.current_progress = 1
                 self.completed = True
+                self.save_data()
                 self.unregister_handles()
 
     def register_handles(self):

@@ -17,6 +17,7 @@ class IAmInDanger(AchievementData):
                     if mod.levels >= 6:
                         self.current_progress = 1
                         self.completed = 1
+                        self.save_data()
                         self.unregister_handles()
     def register_handles(self):
         if self.completed:

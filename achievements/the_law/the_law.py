@@ -27,6 +27,7 @@ class TheLaw(AchievementData):
                     if op.bl_idname == 'MESH_OT_primitive_cube_add':
                         self.current_progress = 1
                         self.completed = True
+                        self.save_data()
                         self.unregister_handles()
     def register_handles(self):
         if self.completed:

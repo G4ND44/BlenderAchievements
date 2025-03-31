@@ -28,6 +28,7 @@ class ParanoidAndroid(AchievementData):
         if last_three_are_in_minute:
             self.current_progress = 1
             self.completed = True
+            self.save_data()
             self.unregister_handles()
         
     def register_handles(self):

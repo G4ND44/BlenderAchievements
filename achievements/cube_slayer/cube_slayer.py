@@ -18,6 +18,7 @@ class CubeSlayer(AchievementData):
         if self.current_progress >= self.max_progress:
             self.current_progress = self.max_progress
             self.completed = True
+            self.save_data()
             self.unregister_handles()
         self.previous_cube_count = current_cube_count
     ##########################
